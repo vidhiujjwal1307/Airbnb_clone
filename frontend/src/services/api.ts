@@ -9,7 +9,7 @@ import {
   ListingFilterState
 } from '@/types';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:8000/api';
+const API_BASE_URL = 'https://airbnb-clone-j1h2.onrender.com/api';
 
 async function fetchAPI<T>(endpoint: string, options: RequestInit = {}, userId?: number): Promise<T> {
   const headers: Record<string, string> = {
